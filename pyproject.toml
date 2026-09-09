@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=83,<84"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ecommerce-knowledge-graph-agent"
+version = "0.1.0"
+description = "Course-based graph QA reproduction with explicit evidence and a synthetic public demo"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+license = "MIT"
+authors = [{name = "Project Contributors"}]
+dependencies = [
+  "fastapi==0.141.1", "uvicorn==0.52.4", "pydantic==2.13.5",
+  "pydantic-settings==2.15.0", "python-dotenv==1.2.3",
+  "PyMySQL==1.2.0", "cryptography==50.0.1", "neo4j==5.28.2", "httpx==0.28.1", "psutil==7.2.2"
+]
+
+[project.optional-dependencies]
+retrieval = ["sentence-transformers==5.2.3", "transformers==5.16.1", "torch==2.14.0"]
+training = ["transformers==5.16.1", "torch==2.14.0", "datasets==5.0.1", "accelerate==1.15.0", "seqeval==1.2.2", "tensorboard==2.21.0"]
+
+[project.scripts]
+ecommerce-graph = "ecommerce_graph_agent.cli:main"
+ecommerce-graph-agent = "ecommerce_graph_agent.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+ecommerce_graph_agent = ["web/static/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+markers = ["integration: real opt-in local databases", "online: explicitly authorized paid API",
+           "e2e: API or browser contract", "synthetic: independent generated fixture"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 110
+extend-exclude = [".runtime", ".venv-public", ".cache", "artifacts", "reports", "materials_private"]
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]
+
+[tool.mypy]
+python_version = "3.12"
+files = ["src/ecommerce_graph_agent"]
+ignore_missing_imports = true
+follow_untyped_imports = false
+check_untyped_defs = true
+warn_unused_ignores = true

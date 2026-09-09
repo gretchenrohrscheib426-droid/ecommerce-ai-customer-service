@@ -1,0 +1,7 @@
+name: ecommerce-label-studio-public
+channels: [conda-forge]
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - label-studio==1.23.0

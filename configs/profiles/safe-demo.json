@@ -1,0 +1,1 @@
+{"profile":"safe-demo","raw_cypher":false,"online_enabled":false,"max_rows":20,"query_timeout_seconds":5,"max_steps":6,"max_retries":2,"data":"data/sample/business.json"}

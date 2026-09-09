@@ -1,0 +1,114 @@
+{
+  "dataset": "Synthetic Demo Data",
+  "version": "independent-v1",
+  "production_data": false,
+  "spu": [
+    {
+      "id": 1,
+      "spu_name": "轻旅背包",
+      "description": "轻量防水，配独立电脑隔层。",
+      "category3_id": 111,
+      "tm_id": 1
+    },
+    {
+      "id": 2,
+      "spu_name": "轻旅背包",
+      "description": "日常通勤，配宽肩带。",
+      "category3_id": 111,
+      "tm_id": 2
+    },
+    {
+      "id": 3,
+      "spu_name": "随行水杯",
+      "description": "双层保温，杯盖防漏。",
+      "category3_id": 112,
+      "tm_id": 1
+    }
+  ],
+  "sku": [
+    {
+      "id": 1,
+      "spu_id": 1,
+      "sku_name": "轻旅背包 海蓝",
+      "price": "129",
+      "is_sale": 1
+    },
+    {
+      "id": 2,
+      "spu_id": 2,
+      "sku_name": "轻旅背包 岩灰",
+      "price": "99",
+      "is_sale": 1
+    },
+    {
+      "id": 3,
+      "spu_id": 3,
+      "sku_name": "随行水杯 云白",
+      "price": "59",
+      "is_sale": 0
+    }
+  ],
+  "brands": [
+    {
+      "id": 1,
+      "tm_name": "青岚示例"
+    },
+    {
+      "id": 2,
+      "tm_name": "白屿示例"
+    }
+  ],
+  "tags": [
+    {
+      "id": 1,
+      "text": "轻量防水，配独立电脑隔层。",
+      "label": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "轻量防水",
+          "labels": [
+            "TAG"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "日常通勤，配宽肩带。",
+      "label": [
+        {
+          "start": 6,
+          "end": 9,
+          "text": "宽肩带",
+          "labels": [
+            "TAG"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "双层保温，杯盖防漏。",
+      "label": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "双层保温",
+          "labels": [
+            "TAG"
+          ]
+        },
+        {
+          "start": 5,
+          "end": 9,
+          "text": "杯盖防漏",
+          "labels": [
+            "TAG"
+          ]
+        }
+      ]
+    }
+  ],
+  "relationships_source": "business.json contains 12 relational tables"
+}

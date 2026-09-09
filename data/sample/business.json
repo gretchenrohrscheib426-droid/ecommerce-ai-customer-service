@@ -1,0 +1,180 @@
+{
+  "base_category1": [
+    {
+      "id": 1,
+      "name": "示例生活"
+    }
+  ],
+  "base_category2": [
+    {
+      "id": 11,
+      "name": "出行用品",
+      "category1_id": 1
+    }
+  ],
+  "base_category3": [
+    {
+      "id": 111,
+      "name": "背包",
+      "category2_id": 11
+    },
+    {
+      "id": 112,
+      "name": "水杯",
+      "category2_id": 11
+    }
+  ],
+  "base_trademark": [
+    {
+      "id": 1,
+      "tm_name": "青岚示例"
+    },
+    {
+      "id": 2,
+      "tm_name": "白屿示例"
+    }
+  ],
+  "base_attr_info": [
+    {
+      "id": 1,
+      "attr_name": "材质",
+      "category_level": 2,
+      "category_id": 11
+    }
+  ],
+  "base_attr_value": [
+    {
+      "id": 1,
+      "value_name": "再生织物",
+      "attr_id": 1
+    },
+    {
+      "id": 2,
+      "value_name": "不锈钢",
+      "attr_id": 1
+    }
+  ],
+  "spu_info": [
+    {
+      "id": 1,
+      "spu_name": "轻旅背包",
+      "description": "轻量防水，配独立电脑隔层。",
+      "category3_id": 111,
+      "tm_id": 1
+    },
+    {
+      "id": 2,
+      "spu_name": "轻旅背包",
+      "description": "日常通勤，配宽肩带。",
+      "category3_id": 111,
+      "tm_id": 2
+    },
+    {
+      "id": 3,
+      "spu_name": "随行水杯",
+      "description": "双层保温，杯盖防漏。",
+      "category3_id": 112,
+      "tm_id": 1
+    }
+  ],
+  "spu_sale_attr": [
+    {
+      "id": 1,
+      "spu_id": 1,
+      "base_sale_attr_id": 1,
+      "sale_attr_name": "颜色"
+    },
+    {
+      "id": 2,
+      "spu_id": 2,
+      "base_sale_attr_id": 1,
+      "sale_attr_name": "颜色"
+    },
+    {
+      "id": 3,
+      "spu_id": 3,
+      "base_sale_attr_id": 1,
+      "sale_attr_name": "颜色"
+    }
+  ],
+  "spu_sale_attr_value": [
+    {
+      "id": 1,
+      "spu_id": 1,
+      "base_sale_attr_id": 1,
+      "sale_attr_value_name": "海蓝",
+      "sale_attr_name": "颜色"
+    },
+    {
+      "id": 2,
+      "spu_id": 2,
+      "base_sale_attr_id": 1,
+      "sale_attr_value_name": "岩灰",
+      "sale_attr_name": "颜色"
+    },
+    {
+      "id": 3,
+      "spu_id": 3,
+      "base_sale_attr_id": 1,
+      "sale_attr_value_name": "云白",
+      "sale_attr_name": "颜色"
+    }
+  ],
+  "sku_info": [
+    {
+      "id": 1,
+      "spu_id": 1,
+      "sku_name": "轻旅背包 海蓝",
+      "price": "129",
+      "is_sale": 1
+    },
+    {
+      "id": 2,
+      "spu_id": 2,
+      "sku_name": "轻旅背包 岩灰",
+      "price": "99",
+      "is_sale": 1
+    },
+    {
+      "id": 3,
+      "spu_id": 3,
+      "sku_name": "随行水杯 云白",
+      "price": "59",
+      "is_sale": 0
+    }
+  ],
+  "sku_attr_value": [
+    {
+      "id": 1,
+      "sku_id": 1,
+      "value_id": 1
+    },
+    {
+      "id": 2,
+      "sku_id": 2,
+      "value_id": 1
+    },
+    {
+      "id": 3,
+      "sku_id": 3,
+      "value_id": 2
+    }
+  ],
+  "sku_sale_attr_value": [
+    {
+      "id": 1,
+      "sku_id": 1,
+      "sale_attr_value_id": 1
+    },
+    {
+      "id": 2,
+      "sku_id": 2,
+      "sale_attr_value_id": 2
+    },
+    {
+      "id": 3,
+      "sku_id": 3,
+      "sale_attr_value_id": 3
+    }
+  ]
+}

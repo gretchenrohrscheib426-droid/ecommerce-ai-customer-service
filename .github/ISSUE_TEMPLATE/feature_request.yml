@@ -1,0 +1,17 @@
+name: 功能建议
+description: 说明可验证的本地业务需求
+title: "[Feature] "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 现有代码无法解决的具体问题
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: 最小改动与验收方式
+      description: 不以堆叠框架或虚构业务指标作为目的。
+    validations:
+      required: true

@@ -1,0 +1,11 @@
+name: ecommerce-graph-agent
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - -r requirements.txt
+      - -e .
+# Create a fresh prefix, never update an unrelated existing graph environment.
+# Training and Label Studio/ML Backend environments remain separate; see docs/ENVIRONMENT_SETUP.md.

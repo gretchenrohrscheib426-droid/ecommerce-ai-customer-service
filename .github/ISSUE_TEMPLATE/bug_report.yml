@@ -1,0 +1,23 @@
+name: 缺陷报告
+description: 使用合成数据提供可复现错误
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 最小复现步骤
+      description: 提供命令、解释器版本、请求路径及状态码，不提交密钥、课程原件和真实用户文本。
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 预期与实际行为
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: 环境与脱敏日志
+      description: 区分 mock、实际数据库和真实在线调用。

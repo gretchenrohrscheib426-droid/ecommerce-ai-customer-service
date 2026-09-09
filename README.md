@@ -1,112 +1,93 @@
-# E-commerce AI Customer Service
+# E-commerce Knowledge Graph AI Customer Service
 
-**A course-based AI customer-service application that I configured, integrated and tested across common e-commerce scenarios.**
+电商知识图谱 AI 客服：基于课程项目二次开发的、可核查证据的本地作品集项目。
 
-**Tech Stack:** Python · FastAPI · LangChain · DeepSeek API · MySQL · YAML · Vue
-
-> Portfolio scope: this public repository documents my environment setup, service integration and business-flow validation. The complete course source is not redistributed because no project-level redistribution license was identified in the supplied materials. Real API keys and database credentials are not included.
-
-## What I validated
-
-| Scenario | What the application does |
-|---|---|
-| **Order enquiry** | Collects an order number or order card and returns order status from a mock e-commerce service. |
-| **Logistics enquiry** | Retrieves carrier, tracking number and delivery progress for a mock order. |
-| **Refund conversation** | Collects order number and refund reason, then returns confirmation wording. The chat workflow does **not** create a real refund or move funds. |
-| **Multi-turn continuation** | Saves workflow progress and collected information so the next message can continue the same task. |
-
-## Application flow
+商品问题先确定意图和实体，再执行固定图查询；回答展示实际数据库证据。公开数据全部是独立编写的 **Synthetic Demo Data**。默认无需付费模型 API，BGE 在本机运行。
 
 ```mermaid
 flowchart LR
-    U["Customer message / order card"] --> FE["Vue frontend"]
-    FE --> API["FastAPI backend"]
-    API --> SVC["Dialogue service"]
-    SVC <--> DB["MySQL dialogue state"]
-    SVC --> ROUTE{"Business route"}
-    ROUTE --> TASK["YAML task workflow"]
-    ROUTE --> INFO["Business information"]
-    ROUTE --> CHAT["Casual conversation"]
-    TASK --> EC["Mock e-commerce API"]
-    INFO --> EC
-    ROUTE <--> LLM["Configured DeepSeek client"]
-    TASK --> OUT["Customer-service response"]
-    INFO --> OUT
-    CHAT --> OUT
+  Q[用户问题] --> P[意图与实体解析]
+  P --> A{精确名称或批准别名}
+  A -->|唯一| C[固定 Cypher 模板]
+  A -->|未确定| H[BGE 向量 + 全文检索]
+  H --> U[实体候选与澄清]
+  U --> C
+  C --> N[(Neo4j 只读业务库)]
+  N --> E[实际结果与来源]
+  E --> R[本地事实回答 / 可选 DeepSeek 证据选择]
+  R --> UI[FastAPI + 静态聊天页]
 ```
 
-The diagram is a documentation summary of the supplied source. Not every request uses every component.
+![公开合成数据的真实本地聊天截图](docs/assets/public-demo.png)
 
-## My implementation focus
+[Windows 从零启动](docs/GETTING_STARTED_WINDOWS.md) · [演示步骤](demo.md) · [验证报告](release_validation.json) · [来源与个人改动](SOURCE_MAP.md) · [英文介绍](README_EN.md)
 
-- Completed the project environment configuration and service integration needed for the demonstration.
-- Configured the DeepSeek-compatible model client and verified the application flow through the running interface.
-- Ran and checked **order status, logistics and refund-information collection** scenarios using mock business data.
-- Reviewed how the application stores workflow progress and collected fields for multi-turn continuation.
-- Kept the public portfolio separate from the course implementation and removed credentials/private configuration.
+## 能做什么
 
-I do **not** claim to have designed the entire course architecture from scratch. This repository is intended to show practical AI-application integration and business-process understanding.
+|能力|实现与边界|
+|---|---|
+|人工标注与 AI 预标注接口|Label Studio 与独立 ML Backend；无已授权在线服务时明确阻塞预标注，不返回假预测|
+|BERT TAG|数据校验、原文跨度对齐、去重切分、训练、保存、预测和独立测试入口；公开版本未完成正式训练|
+|结构化同步|MySQL 12 表映射为 10 类结构节点；端点校验、事务写入、重复导入与对账|
+|文本入图|SPU–Have–Tag 带原文摘要、跨度和模型来源；公开 Tag 为人工合成示例|
+|混合检索|BGE 512 维向量 + Neo4j 中文全文，RRF 合并候选，保留业务身份和来源|
+|实体对齐|唯一精确名称/登记别名直接使用；同名和模糊候选需澄清|
+|受控问答|9 个固定 Cypher 模板、参数边界、超时、数据库只读、证据回答|
+|应用验证|FastAPI、原生 HTML/CSS/JS、真实数据库集成、浏览器故障测试、关闭重启验证|
 
-## Dialogue state
+示例只有 3 个 SPU，故意包含两个同名商品；它用来复现边界和调用链，不代表生产规模。图生成规则为 21 个结构节点、27 条结构关系，加 4 个人工 Tag 与 4 条 Have；实际查询记录见验证报告。
 
-The supplied application stores a serialized dialogue state keyed by `sender_id`. The state includes the current workflow step and collected fields, allowing a later message to continue an unfinished task. In the supplied implementation, JSON content is stored in a text field rather than a native MySQL JSON column.
+## 快速启动
 
-See [Dialogue state notes](docs/state_management.md).
+Windows PowerShell 中先进入空间充足的开发目录，再执行。需要 Git 和 Python 3.12；首次安装会下载 CPU PyTorch、BGE、JDK 和 Neo4j，至少预留 12 GiB。不安装 WSL，不覆盖其他环境。
 
-## Business workflow notes
-
-The three demonstrated flows are documented in [Core business workflows](docs/workflows.md). The refund flow is deliberately described as a **confirmation-only conversation** because the chat workflow does not call the standalone mock refund-creation endpoint.
-
-## DeepSeek configuration
-
-Only placeholder configuration is provided publicly:
-
-```env
-LLM_MODEL=
-LLM_BASE_URL=
-LLM_API_KEY=
-COMMERCE_API_BASE_URL=
-DATABASE_URL=
-APP_HOST=
-APP_PORT=
+```powershell
+git clone https://github.com/gretchenrohrscheib426-droid/ecommerce-ai-customer-service.git
+Set-Location ecommerce-ai-customer-service
+$basePython = (py -3.12 -c "import sys; print(sys.executable)").Trim()
+& $basePython -X utf8 scripts/check_environment.py
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/public_bootstrap.ps1 -Python $basePython
+& .\.venv-public\Scripts\python.exe scripts/services.py start neo4j
+& .\.venv-public\Scripts\python.exe scripts/sample_demo.py secure
+& .\.venv-public\Scripts\python.exe scripts/sample_demo.py build
+& .\.venv-public\Scripts\python.exe scripts/create_indexes.py
+& .\.venv-public\Scripts\python.exe scripts/serving_mode.py serve
+& .\.venv-public\Scripts\python.exe scripts/services.py start api
+Invoke-RestMethod http://127.0.0.1:8012/health/ready
 ```
 
-A real `.env`, API key, database password, token, cookie or private path must never be committed.
+健康接口返回 ready 后，打开 http://127.0.0.1:8012。初始化只做一次；日常 `scripts/run_demo.py start` / `stop` 不重新安装或导入。端口冲突、Python 没有 py 启动器、不同终端及完整 MySQL 路线见 Windows 文档。
 
-See [Configuration notes](docs/configuration.md).
+## 可以现场演示的问题
 
-## What is intentionally not public
+|问题|观察点|
+|---|---|
+|青岚品牌有哪些商品|品牌别名、真实商品列表|
+|随行水杯价格|价格 59、未上架状态也明确显示|
+|随行水杯规格|属性值来自图查询|
+|随行水杯分类链|三层分类路径|
+|随行水杯标签|人工合成 Tag 来源标记|
+|随行水杯信息|商品详情|
+|轻旅背包价格|同名商品澄清，再选择一个业务 ID|
+|zxqv998877|无匹配，不补造商品|
+|查看订单|能力边界，拒绝未实现的订单查询|
+|删除所有节点|拒绝写入，HTTP 不暴露原始 Cypher|
 
-- Real DeepSeek API key or other credentials
-- `.env` files and database passwords
-- Complete Atguigu course source
-- Course prompts, YAML files, SQL seeds and Docker configuration
-- Unverified RAG / vector-database / tool-calling claims
-- Production customer data or production refund capability
+## 工程与验证
 
-## Source and attribution
+Python 3.12、FastAPI、Pydantic、PyMySQL、Neo4j 5.26、Transformers、PyTorch CPU、Sentence Transformers；前端没有构建工具或过时 CDN 依赖。Agent 在这里指单个有界工具工作流，不声称多智能体或模型原生工具调用。
 
-The application is based on the **Atguigu (尚硅谷) “电商小二” course project**. No project-level redistribution license was found in the supplied archive, so this repository does not republish the full implementation. Attribution is retained rather than presenting the course architecture as wholly original work.
-
-See [NOTICE](NOTICE.md) and [third-party release audit](THIRD_PARTY_RELEASE_AUDIT.md).
-
-## Repository structure
-
-```text
-.
-├── README.md
-├── .env.example
-├── .gitignore
-├── NOTICE.md
-├── THIRD_PARTY_RELEASE_AUDIT.md
-└── docs/
-    ├── architecture.md
-    ├── workflows.md
-    ├── state_management.md
-    ├── contribution_scope.md
-    └── configuration.md
+```powershell
+& .\.venv-public\Scripts\python.exe -m pip install -r requirements-dev.txt
+& .\.venv-public\Scripts\python.exe -m pytest tests/unit tests/e2e/test_api.py -q
+& .\.venv-public\Scripts\python.exe scripts/public_verify.py --restart
+& .\.venv-public\Scripts\python.exe scripts/validate_release.py --run
 ```
 
-## Resume-friendly summary
+单元/API mock、真实数据库、真实浏览器、随机小模型训练接口检查、正式训练和在线模型调用分别记录。详见 [验证说明](docs/VALIDATION.md)。GitHub Actions 自动运行离线合同测试、清单/历史边界检查和完整锁定依赖的漏洞扫描；运行链接以 GitHub 实际结果为准。
 
-> Configured and integrated a course-based e-commerce AI customer-service application with DeepSeek API support, and validated order-status, logistics and refund-information collection flows; reviewed MySQL-backed conversation-state persistence for multi-turn continuation.
+## 来源、贡献与限制
+
+课程提供电商图谱、标注、BERT 与检索问答的学习主线。个人新增及修复包括原文跨度恢复、分词器保存、稳定图身份、索引幂等、实体 metadata、固定模板查询、防注入与澄清、独立样例、测试和发布审查，逐项映射见 [SOURCE_MAP](SOURCE_MAP.md)。MIT 仅覆盖本仓库有权公开的代码与独立样例，上游软件许可独立保留。
+
+正式 BERT 训练、该修订的独立测试 F1、真实 AI 预标注、DeepSeek 在线回答均未验证。没有权重和课程原件随仓库分发。源码公开不代表网站已部署；本项目默认仅本地演示。简历只能采用本人能解释、且有对应证据的表述，见 [RESUME_EVIDENCE](RESUME_EVIDENCE.md)。

@@ -1,0 +1,42 @@
+name: ecommerce-graph-synthetic
+services:
+  mysql:
+    image: mysql:8.4.11
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:?Set a local demo-only root password in the shell}
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-ecommerce_demo}
+    ports:
+      - "127.0.0.1:3308:3306"
+    volumes:
+      - synthetic_mysql:/var/lib/mysql
+    healthcheck:
+      test: ["CMD-SHELL", "MYSQL_PWD=$$MYSQL_ROOT_PASSWORD mysqladmin ping -h 127.0.0.1 --silent"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+    restart: unless-stopped
+  neo4j:
+    image: neo4j:5.26.30-community@sha256:037cf5756f0135cbfd66b739b6df7c7c4bb100f9ce11602f6f9538e17e02c74d
+    environment:
+      NEO4J_AUTH: neo4j/${NEO4J_PASSWORD:?Set a local demo-only password in the shell}
+      NEO4J_server_memory_heap_initial__size: 256m
+      NEO4J_server_memory_heap_max__size: 1G
+      NEO4J_server_memory_pagecache_size: 256m
+      NEO4J_server_databases_default__to__read__only: ${NEO4J_READ_ONLY:-false}
+      NEO4J_dbms_usage__report_enabled: "false"
+    ports:
+      - "127.0.0.1:7476:7474"
+      - "127.0.0.1:7689:7687"
+    volumes:
+      - synthetic_neo4j:/data
+      - synthetic_neo4j_logs:/logs
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q --spider http://localhost:7474/"]
+      interval: 10s
+      timeout: 5s
+      retries: 18
+    restart: unless-stopped
+volumes:
+  synthetic_mysql:
+  synthetic_neo4j:
+  synthetic_neo4j_logs:

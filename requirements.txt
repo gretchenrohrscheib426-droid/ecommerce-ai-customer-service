@@ -1,0 +1,4 @@
+# Runtime for the native public CPU demo. Windows lock is envs/locks/public/public-pip-win64.txt.
+-r envs/public-requirements.in
+pydantic-settings==2.15.0
+python-dotenv==1.2.3

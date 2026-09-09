@@ -1,0 +1,52 @@
+[
+  {
+    "case": "brand",
+    "expected_status": "ok",
+    "dataset": "Synthetic Demo Data"
+  },
+  {
+    "case": "price",
+    "expected_status": "ok",
+    "dataset": "Synthetic Demo Data"
+  },
+  {
+    "case": "attributes",
+    "expected_status": "ok",
+    "dataset": "Synthetic Demo Data"
+  },
+  {
+    "case": "category",
+    "expected_status": "ok",
+    "dataset": "Synthetic Demo Data"
+  },
+  {
+    "case": "tags",
+    "expected_status": "ok",
+    "dataset": "Synthetic Demo Data"
+  },
+  {
+    "case": "detail",
+    "expected_status": "ok",
+    "dataset": "Synthetic Demo Data"
+  },
+  {
+    "case": "ambiguity",
+    "expected_status": "clarify",
+    "dataset": "Synthetic Demo Data"
+  },
+  {
+    "case": "no_match",
+    "expected_status": "no_match",
+    "dataset": "Synthetic Demo Data"
+  },
+  {
+    "case": "unsupported",
+    "expected_status": "unsupported",
+    "dataset": "Synthetic Demo Data"
+  },
+  {
+    "case": "write_rejected",
+    "expected_status": "unsupported",
+    "dataset": "Synthetic Demo Data"
+  }
+]

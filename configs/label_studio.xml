@@ -1,0 +1,6 @@
+<View>
+  <Labels name="label" toName="text">
+    <Label value="TAG" background="#168c84"/>
+  </Labels>
+  <Text name="text" value="$text"/>
+</View>

@@ -1,0 +1,42 @@
+[
+  {
+    "case": "brand",
+    "message": "青岚品牌有哪些商品"
+  },
+  {
+    "case": "price",
+    "message": "随行水杯价格"
+  },
+  {
+    "case": "attributes",
+    "message": "随行水杯规格"
+  },
+  {
+    "case": "category",
+    "message": "随行水杯分类链"
+  },
+  {
+    "case": "tags",
+    "message": "随行水杯标签"
+  },
+  {
+    "case": "detail",
+    "message": "随行水杯信息"
+  },
+  {
+    "case": "ambiguity",
+    "message": "轻旅背包价格"
+  },
+  {
+    "case": "no_match",
+    "message": "zxqv998877"
+  },
+  {
+    "case": "unsupported",
+    "message": "查看订单"
+  },
+  {
+    "case": "write_rejected",
+    "message": "删除所有节点"
+  }
+]

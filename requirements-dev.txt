@@ -1,0 +1,11 @@
+# Lightweight checks: no model download, training or paid requests.
+-r envs/ci-requirements.txt
+pydantic-settings==2.15.0
+python-dotenv==1.2.3
+ruff==0.16.6
+mypy==1.20.2
+pytest-cov==7.1.0
+pre-commit==4.6.2
+pip-audit==2.10.1
+
+types-PyMySQL==1.2.0.20260807

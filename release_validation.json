@@ -1,0 +1,101 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-09-09T13:56:49.757154+00:00",
+  "status": "READY",
+  "checks": {
+    "required_files": {
+      "status": "PASS",
+      "missing": []
+    },
+    "public_boundary": {
+      "status": "PASS",
+      "candidate_files": 214,
+      "history_blobs_checked": 11,
+      "issues": [],
+      "limits": "Heuristic detection; no proof that every possible secret or PII is absent. Matches are never printed."
+    },
+    "ruff": {
+      "status": "PASS",
+      "exit_code": 0,
+      "evidence": "reports\\private\\release-checks\\ruff.log"
+    },
+    "mypy": {
+      "status": "PASS",
+      "exit_code": 0,
+      "evidence": "reports\\private\\release-checks\\mypy.log"
+    },
+    "compile": {
+      "status": "PASS",
+      "exit_code": 0,
+      "evidence": "reports\\private\\release-checks\\compile.log"
+    },
+    "unit_and_api_mock": {
+      "status": "PASS",
+      "exit_code": 0,
+      "evidence": "reports\\private\\release-checks\\unit_and_api_mock.log"
+    },
+    "pip_check": {
+      "status": "PASS",
+      "exit_code": 0,
+      "evidence": "reports\\private\\release-checks\\pip_check.log"
+    },
+    "dependency_audit": {
+      "status": "PASS",
+      "exit_code": 0,
+      "evidence": "reports\\private\\release-checks\\dependency_audit.log",
+      "findings": []
+    }
+  },
+  "observed_verifications": {
+    "real_database_integration": {
+      "status": "PASS",
+      "tests": 5,
+      "passed": 5,
+      "skipped": 0,
+      "failures": 0,
+      "evidence": "reports/private/github-real-integration.xml",
+      "sha256": "50d3350e753807828dba4592f2db4be8a50d116281e0d20b861ca6179793db5c"
+    },
+    "independent_ml_sdk_mock": {
+      "status": "PASS",
+      "tests": 7,
+      "passed": 7,
+      "skipped": 0,
+      "failures": 0,
+      "evidence": "reports/private/github-ml-sdk.xml",
+      "sha256": "e5e1c4eb1c6d799869c5b8f57406bb08ded6a0780702dbb9b0db277a548ae8aa"
+    },
+    "synthetic_training_contract": {
+      "status": "PASS",
+      "tests": 1,
+      "passed": 1,
+      "skipped": 0,
+      "failures": 0,
+      "evidence": "reports/private/transformers-contract.xml",
+      "sha256": "b31ba24bfa24fb2b4fd760121fa2e4fcb1e1bb75bf750a60998ee7b08a60bae1"
+    },
+    "browser_real_and_fault_injection": {
+      "status": "PASS",
+      "evidence": "reports/private/browser-e2e.json",
+      "sha256": "fe4f50ca0e6c172639c47527be4f94ccc3e7f066d86ee850cdacf6e08701050a"
+    },
+    "native_restart": {
+      "status": "PASS",
+      "evidence": "reports/private/public-verification.json",
+      "sha256": "73f41177074dd6655a6af10c354de2dba2c9074576a692a160f8762a9cbcbc03"
+    },
+    "clean_source_installation": {
+      "status": "PASS",
+      "evidence": "reports/private/github-clean-validation.json",
+      "sha256": "46df5192a467eee21b23d63437b8e670c748c480c9befbf682721220ec6e1c31"
+    }
+  },
+  "source_revision": "1dd9fa782994d81a72f7b4c8c991fec22ef419b4",
+  "worktree_has_uncommitted_changes": true,
+  "validation_subject": "worktree content identified by the companion publish manifest; HEAD is the parent revision at gate execution",
+  "github_actions": "See actual GitHub run for the published commit; this local gate does not query Actions",
+  "docker_runtime": "NOT_RUN",
+  "full_training_of_this_revision": "NOT_RUN: no verified trained checkpoint for this revision",
+  "deepseek_online": "NOT_RUN: no authorized online inference configured",
+  "deployment": "LOCAL_ONLY"
+}

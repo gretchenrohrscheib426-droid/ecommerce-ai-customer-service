@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>E-commerce Knowledge Graph AI Customer Service</title><link rel="stylesheet" href="/static/styles.css"><script src="/static/app.js" defer></script></head>
+<body><main><header><span class="eyebrow">E-commerce Knowledge Graph AI Customer Service</span><h1>先查到事实，再回答。</h1><p>Demo Mode · 从商品、品牌和分类出发，查看图谱中的记录与证据。</p></header>
+<aside class="mode"><span class="dot" id="service-dot"></span><strong id="mode">正在检查服务</strong><span>Synthetic Demo Data · 合成示例 · 非实时价格或库存</span></aside>
+<section class="help"><div class="examples"><button type="button" data-question="随行水杯价格">水杯价格</button><button type="button" data-question="轻旅背包价格">同名商品澄清</button><button type="button" data-question="青岚品牌有哪些商品">品牌商品</button></div><p id="dependencies">依赖状态读取中…</p><p>可询问：某品牌有哪些商品、商品的价格 / 规格 / 分类链 / 抽取标签。</p><p>输入本地数据中的完整名称。近似或同名实体会请您确认。</p></section>
+<section id="messages" aria-live="polite" aria-label="聊天记录"><article class="bot"><b>图谱助手</b><p>请输入商品或品牌问题。每次查询会显示实际证据；在线模型未启用时，回答由本地模板整理。</p></article></section>
+<form id="chat-form"><label for="question">您的问题</label><div class="composer"><textarea id="question" maxlength="500" rows="2" placeholder="输入数据中的品牌或商品完整名称" required></textarea><button id="send" type="submit">查询 ↗</button><button id="cancel" type="button" hidden>取消</button></div><p id="status" role="status">Enter 发送 · Shift + Enter 换行 · 最长 500 字</p></form>
+<footer>基于课程项目复现与安全修复。标签来源见回答证据，仍需人工核实。公开示例和课程私有数据分别运行。</footer></main></body></html>

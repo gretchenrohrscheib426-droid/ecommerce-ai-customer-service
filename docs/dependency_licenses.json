@@ -1,0 +1,1101 @@
+[
+  {
+    "name": "CacheControl",
+    "version": "0.14.4",
+    "license_metadata": "Apache-2.0",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "Jinja2",
+    "version": "3.1.6",
+    "license_metadata": "Not supplied in metadata",
+    "license_classifiers": [
+      "License :: OSI Approved :: BSD License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "Markdown",
+    "version": "3.10.3",
+    "license_metadata": "BSD-3-Clause",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "MarkupSafe",
+    "version": "3.0.3",
+    "license_metadata": "BSD-3-Clause",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "PyMySQL",
+    "version": "1.2.0",
+    "license_metadata": "MIT",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "PyYAML",
+    "version": "6.0.3",
+    "license_metadata": "MIT",
+    "license_classifiers": [
+      "License :: OSI Approved :: MIT License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "Pygments",
+    "version": "2.21.0",
+    "license_metadata": "BSD-2-Clause",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "Werkzeug",
+    "version": "3.1.8",
+    "license_metadata": "BSD-3-Clause",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "absl-py",
+    "version": "2.5.0",
+    "license_metadata": "Apache-2.0",
+    "license_classifiers": [
+      "License :: OSI Approved :: Apache Software License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "accelerate",
+    "version": "1.15.0",
+    "license_metadata": "Apache",
+    "license_classifiers": [
+      "License :: OSI Approved :: Apache Software License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "aiohappyeyeballs",
+    "version": "2.7.1",
+    "license_metadata": "PSF-2.0",
+    "license_classifiers": [
+      "License :: OSI Approved :: Python Software Foundation License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "aiohttp",
+    "version": "3.14.3",
+    "license_metadata": "Apache-2.0 AND MIT",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "aiosignal",
+    "version": "1.4.0",
+    "license_metadata": "Apache 2.0",
+    "license_classifiers": [
+      "License :: OSI Approved :: Apache Software License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "annotated-doc",
+    "version": "0.0.5",
+    "license_metadata": "MIT",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "annotated-types",
+    "version": "0.8.0",
+    "license_metadata": "MIT",
+    "license_classifiers": [
+      "License :: OSI Approved :: MIT License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "anyio",
+    "version": "4.15.1",
+    "license_metadata": "MIT",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "attrs",
+    "version": "26.1.0",
+    "license_metadata": "MIT",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "boolean.py",
+    "version": "5.0",
+    "license_metadata": "BSD-2-Clause",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "certifi",
+    "version": "2026.7.22",
+    "license_metadata": "MPL-2.0",
+    "license_classifiers": [
+      "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "cffi",
+    "version": "2.1.1",
+    "license_metadata": "MIT-0",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "cfgv",
+    "version": "3.5.0",
+    "license_metadata": "MIT",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "charset-normalizer",
+    "version": "3.5.1",
+    "license_metadata": "MIT",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "click",
+    "version": "8.5.0",
+    "license_metadata": "BSD-3-Clause",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "cloudpickle",
+    "version": "3.1.2",
+    "license_metadata": "BSD-3-Clause",
+    "license_classifiers": [
+      "License :: OSI Approved :: BSD License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "colorama",
+    "version": "0.4.6",
+    "license_metadata": "Not supplied in metadata",
+    "license_classifiers": [
+      "License :: OSI Approved :: BSD License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "coverage",
+    "version": "7.16.0",
+    "license_metadata": "Apache-2.0",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "cryptography",
+    "version": "50.0.1",
+    "license_metadata": "Apache-2.0 OR BSD-3-Clause",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "cyclonedx-python-lib",
+    "version": "11.12.0",
+    "license_metadata": "Apache-2.0",
+    "license_classifiers": [
+      "License :: OSI Approved :: Apache Software License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "datasets",
+    "version": "5.0.1",
+    "license_metadata": "Apache 2.0",
+    "license_classifiers": [
+      "License :: OSI Approved :: Apache Software License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "defusedxml",
+    "version": "0.7.1",
+    "license_metadata": "PSFL",
+    "license_classifiers": [
+      "License :: OSI Approved :: Python Software Foundation License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "dill",
+    "version": "0.4.1",
+    "license_metadata": "BSD-3-Clause",
+    "license_classifiers": [
+      "License :: OSI Approved :: BSD License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "distlib",
+    "version": "0.4.3",
+    "license_metadata": "PSF-2.0",
+    "license_classifiers": [
+      "License :: OSI Approved :: Python Software Foundation License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "fastapi",
+    "version": "0.141.1",
+    "license_metadata": "MIT",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "filelock",
+    "version": "3.32.3",
+    "license_metadata": "MIT",
+    "license_classifiers": [
+      "License :: OSI Approved :: MIT License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "frozenlist",
+    "version": "1.8.0",
+    "license_metadata": "Apache-2.0",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "fsspec",
+    "version": "2026.2.0",
+    "license_metadata": "BSD-3-Clause",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "grpcio",
+    "version": "1.83.1",
+    "license_metadata": "Apache-2.0",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "h11",
+    "version": "0.16.0",
+    "license_metadata": "MIT",
+    "license_classifiers": [
+      "License :: OSI Approved :: MIT License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "hf-xet",
+    "version": "1.6.0",
+    "license_metadata": "Apache-2.0",
+    "license_classifiers": [
+      "License :: OSI Approved :: Apache Software License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "httpcore",
+    "version": "1.0.9",
+    "license_metadata": "BSD-3-Clause",
+    "license_classifiers": [
+      "License :: OSI Approved :: BSD License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "httpx",
+    "version": "0.28.1",
+    "license_metadata": "BSD-3-Clause",
+    "license_classifiers": [
+      "License :: OSI Approved :: BSD License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "huggingface_hub",
+    "version": "1.30.0",
+    "license_metadata": "Apache-2.0",
+    "license_classifiers": [
+      "License :: OSI Approved :: Apache Software License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "identify",
+    "version": "2.6.19",
+    "license_metadata": "MIT",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "idna",
+    "version": "3.19",
+    "license_metadata": "BSD-3-Clause",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "iniconfig",
+    "version": "2.3.0",
+    "license_metadata": "MIT",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "joblib",
+    "version": "1.6.0",
+    "license_metadata": "BSD-3-Clause",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "librt",
+    "version": "0.15.0",
+    "license_metadata": "MIT",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "license-expression",
+    "version": "30.4.4",
+    "license_metadata": "Apache-2.0",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "markdown-it-py",
+    "version": "4.2.0",
+    "license_metadata": "Not supplied in metadata",
+    "license_classifiers": [
+      "License :: OSI Approved :: MIT License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "mdurl",
+    "version": "0.1.2",
+    "license_metadata": "Not supplied in metadata",
+    "license_classifiers": [
+      "License :: OSI Approved :: MIT License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "mpmath",
+    "version": "1.3.0",
+    "license_metadata": "BSD",
+    "license_classifiers": [
+      "License :: OSI Approved :: BSD License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "msgpack",
+    "version": "1.2.2",
+    "license_metadata": "Apache-2.0",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "multidict",
+    "version": "6.7.1",
+    "license_metadata": "Apache License 2.0",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "multiprocess",
+    "version": "0.70.19",
+    "license_metadata": "BSD-3-Clause",
+    "license_classifiers": [
+      "License :: OSI Approved :: BSD License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "mypy",
+    "version": "1.20.2",
+    "license_metadata": "MIT",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "mypy_extensions",
+    "version": "1.1.0",
+    "license_metadata": "MIT",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "narwhals",
+    "version": "2.26.0",
+    "license_metadata": "MIT",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "neo4j",
+    "version": "5.28.2",
+    "license_metadata": "Apache License, Version 2.0",
+    "license_classifiers": [
+      "License :: OSI Approved :: Apache Software License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "networkx",
+    "version": "3.6.1",
+    "license_metadata": "BSD-3-Clause",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "nodeenv",
+    "version": "1.10.0",
+    "license_metadata": "BSD",
+    "license_classifiers": [
+      "License :: OSI Approved :: BSD License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "numpy",
+    "version": "2.5.3",
+    "license_metadata": "BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "packageurl-python",
+    "version": "0.17.6",
+    "license_metadata": "MIT",
+    "license_classifiers": [
+      "License :: OSI Approved :: MIT License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "packaging",
+    "version": "26.3",
+    "license_metadata": "Apache-2.0 OR BSD-2-Clause",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "pandas",
+    "version": "3.0.5",
+    "license_metadata": "Full license text in distribution metadata / LICENSE; not reproduced",
+    "license_classifiers": [
+      "License :: OSI Approved :: BSD License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "pathspec",
+    "version": "1.1.1",
+    "license_metadata": "Not supplied in metadata",
+    "license_classifiers": [
+      "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "pillow",
+    "version": "12.3.0",
+    "license_metadata": "MIT-CMU",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "pip",
+    "version": "26.2",
+    "license_metadata": "MIT",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "pip-requirements-parser",
+    "version": "32.0.1",
+    "license_metadata": "MIT",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "pip_api",
+    "version": "0.0.35",
+    "license_metadata": "Full license text in distribution metadata / LICENSE; not reproduced",
+    "license_classifiers": [
+      "License :: OSI Approved :: Apache Software License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "pip_audit",
+    "version": "2.10.1",
+    "license_metadata": "Not supplied in metadata",
+    "license_classifiers": [
+      "License :: OSI Approved :: Apache Software License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "platformdirs",
+    "version": "4.11.8",
+    "license_metadata": "MIT",
+    "license_classifiers": [
+      "License :: OSI Approved :: MIT License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "pluggy",
+    "version": "1.6.0",
+    "license_metadata": "MIT",
+    "license_classifiers": [
+      "License :: OSI Approved :: MIT License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "pre_commit",
+    "version": "4.6.2",
+    "license_metadata": "MIT",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "propcache",
+    "version": "0.5.2",
+    "license_metadata": "Apache-2.0",
+    "license_classifiers": [
+      "License :: OSI Approved :: Apache Software License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "protobuf",
+    "version": "7.36.1",
+    "license_metadata": "3-Clause BSD License",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "psutil",
+    "version": "7.2.2",
+    "license_metadata": "BSD-3-Clause",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "py-serializable",
+    "version": "2.1.0",
+    "license_metadata": "Apache-2.0",
+    "license_classifiers": [
+      "License :: OSI Approved :: Apache Software License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "pyarrow",
+    "version": "25.0.1",
+    "license_metadata": "Apache-2.0",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "pycparser",
+    "version": "3.0",
+    "license_metadata": "BSD-3-Clause",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "pydantic",
+    "version": "2.13.5",
+    "license_metadata": "MIT",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "pydantic-settings",
+    "version": "2.15.0",
+    "license_metadata": "MIT",
+    "license_classifiers": [
+      "License :: OSI Approved :: MIT License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "pydantic_core",
+    "version": "2.46.5",
+    "license_metadata": "MIT",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "pyparsing",
+    "version": "3.3.2",
+    "license_metadata": "MIT",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "pytest",
+    "version": "9.0.3",
+    "license_metadata": "MIT",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "pytest-cov",
+    "version": "7.1.0",
+    "license_metadata": "MIT",
+    "license_classifiers": [
+      "License :: OSI Approved :: MIT License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "python-dateutil",
+    "version": "2.9.0.post0",
+    "license_metadata": "Dual License",
+    "license_classifiers": [
+      "License :: OSI Approved :: BSD License",
+      "License :: OSI Approved :: Apache Software License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "python-discovery",
+    "version": "1.6.0",
+    "license_metadata": "Full license text in distribution metadata / LICENSE; not reproduced",
+    "license_classifiers": [
+      "License :: OSI Approved :: MIT License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "python-dotenv",
+    "version": "1.2.3",
+    "license_metadata": "BSD-3-Clause",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "pytz",
+    "version": "2026.3.post1",
+    "license_metadata": "MIT",
+    "license_classifiers": [
+      "License :: OSI Approved :: MIT License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "regex",
+    "version": "2026.9.3",
+    "license_metadata": "Apache-2.0 AND CNRI-Python",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "requests",
+    "version": "2.34.2",
+    "license_metadata": "Apache-2.0",
+    "license_classifiers": [
+      "License :: OSI Approved :: Apache Software License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "rich",
+    "version": "15.0.0",
+    "license_metadata": "MIT",
+    "license_classifiers": [
+      "License :: OSI Approved :: MIT License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "ruff",
+    "version": "0.16.6",
+    "license_metadata": "MIT",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "safetensors",
+    "version": "0.8.0",
+    "license_metadata": "Not supplied in metadata",
+    "license_classifiers": [
+      "License :: OSI Approved :: Apache Software License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "scikit-learn",
+    "version": "1.9.0",
+    "license_metadata": "BSD-3-Clause",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "scipy",
+    "version": "1.18.1",
+    "license_metadata": "Full license text in distribution metadata / LICENSE; not reproduced",
+    "license_classifiers": [
+      "License :: OSI Approved :: BSD License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "sentence-transformers",
+    "version": "5.2.3",
+    "license_metadata": "Apache 2.0",
+    "license_classifiers": [
+      "License :: OSI Approved :: Apache Software License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "seqeval",
+    "version": "1.2.2",
+    "license_metadata": "MIT",
+    "license_classifiers": [
+      "License :: OSI Approved :: MIT License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "setuptools",
+    "version": "83.0.0",
+    "license_metadata": "MIT",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "shellingham",
+    "version": "1.5.4",
+    "license_metadata": "ISC License",
+    "license_classifiers": [
+      "License :: OSI Approved :: ISC License (ISCL)"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "six",
+    "version": "1.17.0",
+    "license_metadata": "MIT",
+    "license_classifiers": [
+      "License :: OSI Approved :: MIT License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "sortedcontainers",
+    "version": "2.4.0",
+    "license_metadata": "Apache 2.0",
+    "license_classifiers": [
+      "License :: OSI Approved :: Apache Software License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "starlette",
+    "version": "1.6.0",
+    "license_metadata": "BSD-3-Clause",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "sympy",
+    "version": "1.14.0",
+    "license_metadata": "BSD",
+    "license_classifiers": [
+      "License :: OSI Approved :: BSD License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "tensorboard",
+    "version": "2.21.0",
+    "license_metadata": "Apache 2.0",
+    "license_classifiers": [
+      "License :: OSI Approved :: Apache Software License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "tensorboard-data-server",
+    "version": "0.7.2",
+    "license_metadata": "Apache 2.0",
+    "license_classifiers": [
+      "License :: OSI Approved :: Apache Software License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "threadpoolctl",
+    "version": "3.6.0",
+    "license_metadata": "BSD-3-Clause",
+    "license_classifiers": [
+      "License :: OSI Approved :: BSD License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "tokenizers",
+    "version": "0.23.2",
+    "license_metadata": "Not supplied in metadata",
+    "license_classifiers": [
+      "License :: OSI Approved :: Apache Software License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "tomli",
+    "version": "2.4.1",
+    "license_metadata": "MIT",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "tomli_w",
+    "version": "1.2.0",
+    "license_metadata": "Not supplied in metadata",
+    "license_classifiers": [
+      "License :: OSI Approved :: MIT License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "torch",
+    "version": "2.14.0+cpu",
+    "license_metadata": "Apache-2.0 AND Apache-2.0 WITH LLVM-exception AND BSD-2-Clause AND BSD-3-Clause AND BSL-1.0 AND MIT",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "tqdm",
+    "version": "4.70.0",
+    "license_metadata": "MPL-2.0 AND MIT",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "transformers",
+    "version": "5.16.1",
+    "license_metadata": "Apache 2.0 License",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "typer",
+    "version": "0.27.2",
+    "license_metadata": "MIT",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "types-PyMySQL",
+    "version": "1.2.0.20260807",
+    "license_metadata": "Apache-2.0",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "typing-inspection",
+    "version": "0.4.4",
+    "license_metadata": "MIT",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "typing_extensions",
+    "version": "4.16.0",
+    "license_metadata": "PSF-2.0",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "tzdata",
+    "version": "2026.3",
+    "license_metadata": "Apache-2.0",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "urllib3",
+    "version": "2.7.0",
+    "license_metadata": "MIT",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "uvicorn",
+    "version": "0.52.4",
+    "license_metadata": "BSD-3-Clause",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "virtualenv",
+    "version": "21.7.9",
+    "license_metadata": "MIT",
+    "license_classifiers": [
+      "License :: OSI Approved :: MIT License"
+    ],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "xxhash",
+    "version": "4.0.1",
+    "license_metadata": "BSD-2-Clause",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  },
+  {
+    "name": "yarl",
+    "version": "1.24.5",
+    "license_metadata": "Apache-2.0",
+    "license_classifiers": [],
+    "scope": "downloaded dependency, not vendored",
+    "legal_conclusion": "Metadata evidence only; component license applies"
+  }
+]
