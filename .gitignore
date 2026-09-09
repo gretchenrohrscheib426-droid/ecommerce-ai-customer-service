@@ -1,0 +1,18 @@
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.log
+*.db
+*.sqlite
+*.sqlite3
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+node_modules/
+.idea/
+.DS_Store
+review-private/
+# Ignore rules do not remove already tracked files or their history.
